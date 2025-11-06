@@ -1,8 +1,8 @@
 {
-    "name": "keboola/azure-key-vault-client",
+    "name": "antonio-quintino/azure-key-vault-client-fix",
     "license": "MIT",
     "type": "library",
-    "description": "Client for Azure Key Vault",
+    "description": "Client for Azure Key Vault - custom fix",
     "keywords": [
         "keboola",
         "azure",
