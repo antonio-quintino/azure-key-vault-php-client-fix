@@ -37,7 +37,7 @@ class ManagedCredentialsAuthenticator implements AuthenticatorInterface
             $client = $this->clientFactory->getClient(self::INSTANCE_METADATA_SERVICE_ENDPOINT);
             $response = $client->get(
                 sprintf(
-                    '/metadata/identity/oauth2/token?api-version=%s&format=text&resource=%s',
+                    '/metadata/identity/oauth2/token?api-version=%s&resource=%s',
                     self::API_VERSION,
                     $this->resource,
                 ),

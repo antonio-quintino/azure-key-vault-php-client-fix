@@ -12,6 +12,7 @@ class SecretAttributes
     public const RECOVERY_LEVEL_RECOVERABLE = 'Recoverable';
     public const RECOVERY_LEVEL_RECOVERABLE_PROTECTED_SUBSCRIPTION = 'Recoverable+ProtectedSubscription';
     public const RECOVERY_LEVEL_RECOVERABLE_PURGEABLE = 'Recoverable+Purgeable';
+    public const RECOVERY_LEVEL_CUSTOMIZED_RECOVERABLE = 'CustomizedRecoverable';
 
     private ?int $created;
     private ?bool $enabled;
@@ -35,6 +36,7 @@ class SecretAttributes
                 self::RECOVERY_LEVEL_RECOVERABLE,
                 self::RECOVERY_LEVEL_RECOVERABLE_PROTECTED_SUBSCRIPTION,
                 self::RECOVERY_LEVEL_RECOVERABLE_PURGEABLE,
+                self::RECOVERY_LEVEL_CUSTOMIZED_RECOVERABLE,
             ],
         )) {
             throw new ClientException(sprintf('Invalid recovery level "%s"', $recoveryLevel));

@@ -55,7 +55,7 @@ class ManagedCredentialsAuthenticatorTest extends TestCase
         $request = $requestHistory[0]['request'];
         self::assertEquals(
             // phpcs:ignore Generic.Files.LineLength
-            'https://example.com/metadata/identity/oauth2/token?api-version=2019-11-01&format=text&resource=https://vault.azure.net',
+            'https://example.com/metadata/identity/oauth2/token?api-version=2019-11-01&resource=https://vault.azure.net',
             $request->getUri()->__toString(),
         );
         self::assertEquals('GET', $request->getMethod());

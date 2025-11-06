@@ -41,7 +41,7 @@ class AuthenticationFactoryTest extends BaseTest
 
         $mock = $this->createMock(Client::class);
         $mock->method('get')
-            ->with('/metadata?api-version=2019-11-01&format=text')
+            ->with('/metadata?api-version=2019-11-01')
             ->willThrowException(new GuzzleClientException(
                 'boo',
                 new Request('GET', '/foo/'),
